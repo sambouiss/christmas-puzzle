@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-subtitle>{{description}}</mat-card-subtitle>
+    <mat-card-content>
+        <mat-grid-list cols = 9>
+            <mat-grid-tile *ngFor = "let cookie of cookies ">
+                <img src={{cookie}} />
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-form-field>
+            <input matInput id="guess"  type = "text" [(ngModel)]="guess"/>
+            <button mat-button (click)= "checkAnswer()">
+              check your answer
+            </button>
+        </mat-form-field>
+        <h4 *ngIf = "flag"> you got it right</h4>
+    </mat-card-content>
+
+</mat-card>

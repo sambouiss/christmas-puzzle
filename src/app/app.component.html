@@ -1,1 +1,12 @@
-<h4>this is a temp header</h4>
+
+<mat-sidenav-container>
+  <mat-sidenav opened mode="side">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home" routerLinkActive="active">Home</a>
+      <a mat-list-item routerLink="/cookies" routerLinkActive="active">Cryptic Cookies</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
