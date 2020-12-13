@@ -12,7 +12,7 @@ export class HomeComponent {
   public description  = "Merry Christmas"
   public guess = "";
   public flag = false;
-  constructor(private puzzleService:PuzzleService) { }
+  constructor(public puzzleService:PuzzleService) { }
 
   checkAnswer(){
     if(this.puzzleService.checkAnswer(this.guess,this.answer)){

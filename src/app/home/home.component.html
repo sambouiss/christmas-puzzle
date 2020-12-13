@@ -2,7 +2,18 @@
     <mat-card-title>{{title}}</mat-card-title>
     <mat-card-subtitle>{{description}}</mat-card-subtitle>
     <mat-card-content>
+        
+        <mat-grid-list cols = 2>
+            <mat-grid-tile *ngIf = "puzzleService.getCookieAnswer()">
+                Cryptic Cookies
+            </mat-grid-tile>
+            <mat-grid-tile *ngIf = "puzzleService.getCookieAnswer()">
+                {{puzzleService.getCookieAnswer()}}
+            </mat-grid-tile>
+        </mat-grid-list>
+       
         <mat-form-field>
+            
             <input matInput id="guess"  type = "text" [(ngModel)]="guess"/>
             <button mat-button (click)= "checkAnswer()">
               check your answer

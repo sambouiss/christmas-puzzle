@@ -25,6 +25,7 @@ export class CookieComponent  {
   }
   checkAnswer(){
     if(this.puzzleService.checkAnswer(this.guess,this.answer)){
+      PuzzleService.setCookieAnswer(this.answer)
       this.flag = true;
     }
   }
