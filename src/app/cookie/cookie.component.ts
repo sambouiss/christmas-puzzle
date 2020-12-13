@@ -19,7 +19,7 @@ export class CookieComponent  {
     this.guess = ''
     this.cookies = []
     for (var i =1;i<18;i++){
-      var cookie = "../assets/cookie/cookie_"+String(i)+".png"
+      var cookie = "../../assets/cookie/cookie_"+String(i)+".png"
       this.cookies.push(cookie)
     }
   }
