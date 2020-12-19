@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class PuzzleService {
   private static cookieAnswer : String;
+  private static bandAnswer : String;
   constructor() { }
 
   checkAnswer(answer:String, solution: String){
@@ -19,4 +20,11 @@ export class PuzzleService {
     this.cookieAnswer = cookieAnswer;
   }
   
+  getBandAnswer(){
+    return PuzzleService.bandAnswer;
+  }
+
+  static setBandAnswer(bandAnswer: String){
+    this.bandAnswer = bandAnswer;
+  }
 }

@@ -7,12 +7,17 @@
                 <img src={{cookie}} />
             </mat-grid-tile>
         </mat-grid-list>
-        <mat-form-field>
-            <input matInput id="guess"  type = "text" [(ngModel)]="guess"/>
+        <div class = "form-container">
+            <mat-form-field>
+                <input matInput id="guess"  type = "text" [(ngModel)]="guess"/>
+                
+            </mat-form-field>
+            
             <button mat-button (click)= "checkAnswer()">
-              check your answer
+                check your answer
             </button>
-        </mat-form-field>
+            
+        </div>
         <h4 *ngIf = "flag"> you got it right</h4>
     </mat-card-content>
 
