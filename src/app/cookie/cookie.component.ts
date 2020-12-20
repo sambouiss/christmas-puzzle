@@ -9,7 +9,7 @@ import { PuzzleService } from '../puzzle.service';
   styleUrls: ['./cookie.component.scss']
 })
 export class CookieComponent  {
-  private answer = "temp"
+  private answer = "home"
   public title = "Cryptic Cookies"
   public description  = "When Santa entered the house, he noticed the cookies where meticulously arranged. \n Almost as if someone was trying to send him a message or two."
   public cookies : String[];
