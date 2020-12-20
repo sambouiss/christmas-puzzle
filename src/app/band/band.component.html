@@ -4,14 +4,36 @@
     <mat-card-content>
         <div cdkDropList class="band-list" (cdkDropListDropped)="drop($event)">
             <div class="example-box" *ngFor="let band of bands" cdkDrag>
-                <mat-grid-list cols = 6>
-                    <mat-grid-tile *ngFor = "let letter of band ">
-                        {{letter}}
-                    </mat-grid-tile>
-                </mat-grid-list>
+                    <mat-grid-list  cols = 6 >
+                        <mat-grid-tile class = "puzzle-tile" *ngFor = "let letter of band ">
+                            {{letter}}
+                        </mat-grid-tile>
+                    </mat-grid-list>
             </div>
         </div>
-        <img  src = "https://sambouiss.github.io/christmas-puzzle/assets/band/clues.png"/>
+     
+        <h4 *ngIf = "flag"> you got it right</h4>
+        <mat-grid-list class = "clue-list" cols = 3 rowHeight="20px">
+                <mat-grid-tile class = "clue-tile">
+                    1. to love deeply
+                </mat-grid-tile>
+                <mat-grid-tile class = "clue-tile">
+                    2. strong adhesive
+                </mat-grid-tile>
+                <mat-grid-tile class = "clue-tile">
+                    3. confused
+                </mat-grid-tile>
+                <mat-grid-tile class = "clue-tile">
+                    4. _____ eater
+                </mat-grid-tile>
+                <mat-grid-tile class = "clue-tile">
+                    5. nut
+                </mat-grid-tile>
+                <mat-grid-tile class = "clue-tile">
+                    6. to hit
+                </mat-grid-tile>
+
+        </mat-grid-list>
         <div>
             <mat-form-field>
                 <input matInput id="guess"  type = "text" [(ngModel)]="guess"/>
@@ -23,7 +45,8 @@
             </button>
         
         </div>
-        <h4 *ngIf = "flag"> you got it right</h4>
+       
+      
     </mat-card-content>
 
 </mat-card>
