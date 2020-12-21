@@ -2,8 +2,34 @@
     <mat-card-title>{{title}}</mat-card-title>
     <mat-card-subtitle>{{description}}</mat-card-subtitle>
     <mat-card-content>
-        
-        <mat-grid-list cols = 2>
+        <div>
+            <input class="a2" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+        </div>
+
+        <div>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="0"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a2" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+            <input class="a1" maxlength="1"/>
+        </div>
+
+
+        <mat-grid-list cols = 2 [rowHeight]="15">
             <mat-grid-tile *ngIf = "puzzleService.getCookieAnswer()">
                 Cryptic Cookies
             </mat-grid-tile>
@@ -11,7 +37,7 @@
                 {{puzzleService.getCookieAnswer()}}
             </mat-grid-tile>
             <mat-grid-tile *ngIf = "puzzleService.getBandAnswer()">
-                Jumbled Wish Lisst
+                Six Days of Chirstmas
             </mat-grid-tile>
             <mat-grid-tile *ngIf = "puzzleService.getBandAnswer()">
                 {{puzzleService.getBandAnswer()}}

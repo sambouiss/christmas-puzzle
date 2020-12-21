@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { element } from 'protractor';
 import { PuzzleService } from '../puzzle.service';
 
 @Component({
@@ -19,5 +20,7 @@ export class HomeComponent {
       this.flag = true;
     }
   }
+
+
 
 }
