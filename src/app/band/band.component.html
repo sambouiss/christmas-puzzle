@@ -11,29 +11,14 @@
                     </mat-grid-list>
             </div>
         </div>
-     
-        <h4 *ngIf = "flag"> you got it right</h4>
-        <mat-grid-list class = "clue-list" cols = 3 rowHeight="20px">
-                <mat-grid-tile class = "clue-tile">
-                    1. to love deeply
-                </mat-grid-tile>
-                <mat-grid-tile class = "clue-tile">
-                    2. strong adhesive
-                </mat-grid-tile>
-                <mat-grid-tile class = "clue-tile">
-                    3. confused
-                </mat-grid-tile>
-                <mat-grid-tile class = "clue-tile">
-                    4. _____ eater
-                </mat-grid-tile>
-                <mat-grid-tile class = "clue-tile">
-                    5. nut
-                </mat-grid-tile>
-                <mat-grid-tile class = "clue-tile">
-                    6. to hit
-                </mat-grid-tile>
-
-        </mat-grid-list>
+        <h4>On the first day of Christmas...</h4>
+        <h4>On the second day of Christmas... one turtle</h4>
+        <h4>On the third day of Christmas... three calling</h4>
+        <h4>On the fourth day of Christmas... five leaping</h4> 
+        <h4>On the fifth day of christmas... three ladies</h4>
+        <h4>On the sixth day of christmas... two golden</h4>
+       
+        
         <div>
             <mat-form-field>
                 <input matInput id="guess"  type = "text" [(ngModel)]="guess"/>
@@ -45,7 +30,7 @@
             </button>
         
         </div>
-       
+        <h4 *ngIf = "flag"> you got it right</h4>
       
     </mat-card-content>
 

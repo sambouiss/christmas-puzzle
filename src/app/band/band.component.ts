@@ -9,17 +9,17 @@ import { PuzzleService } from '../puzzle.service';
 })
 export class BandComponent {
   private answer = "i heard";
-  public title = "Jumbled Wish List";
-  public description  = "People are getting more and more creative with their wish lists. This year someone sent sent an interective wish list, only its all jumbled. Can you help Santa figure out what they want? (the answers aren't really presents)"
+  public title = "6 Days of Chirstmas";
+  public description  = ""
   public guess : String;
   public flag = false;
   bands = [
-    ['A', 'H', 'X', 'C', 'Z', 'A'],
-    ['D', 'P', 'I', 'I', 'A', 'D'],
-    ['O', 'O', 'E', 'Y', 'L', 'K'],
-    ['R', 'X', 'U', 'K', 'R', 'H'],
-    ['E', 'Y', 'P', 'A', 'E', 'C'],
-    ['I', 'E', 'M', 'P', 'H', 'W']
+    ['D', 'O', 'I', 'O', 'A', 'D'],
+    ['E', 'S', 'S', 'A', 'C', 'G'],
+    ['R', 'E', 'D', 'D', 'R', 'I'],
+    ['O', 'V', 'E', 'S', 'E', 'S'],
+    ['I', 'D', 'B', 'L', 'D', 'R'],
+    ['A', 'H', 'R', 'R', 'N', 'N']
   ];
   constructor(private puzzleService: PuzzleService) { 
     this.guess = '';

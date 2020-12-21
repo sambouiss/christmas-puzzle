@@ -8,7 +8,7 @@ const routes: Routes = [
   {path: 'cookies', component: CookieComponent},
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo:'/home', pathMatch:'full'},
-  {path: 'wishlist',component:BandComponent}
+  {path: 'bands',component:BandComponent}
 ];
 
 @NgModule({
